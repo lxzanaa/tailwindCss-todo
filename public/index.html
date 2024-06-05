@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="bg-[#f4a226]" >
+  <header class="p-6 bg-[#f4a226]">
+    <h1 class="font__ text-black text-7xl p-6 text-center">🏝️ FAR AWAY 🧳</h1>
+  </header>
+
+  <section class="bg-[#e5771f] p-7 flex items-center justify-center gap-10">
+    <h3 class="text-2xl font-bold">What do you need for your trip?</h3>
+    <form id="add_form" action="">
+      <select id="count_select" class="py-3 px-8 bg-[#ffebb3] rounded-full outline-none border-none">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+      <input required class="outline-none border-none bg-[#ffebb3] rounded-full max-w-[257px] py-3 px-8" type="text"
+        placeholder="Item...">
+      <button id="add-btn"
+        class="font-bold text-lg bg-[#76c7ad] text-[#5a3e2b] py-3 px-8 rounded-full uppercase border-none outline-none">Add</button>
+    </form>
+  </section>
+
+  <section id="main-section" class="p-10 bg-[#5a3e2b]">
+    <div class="max-w-[1100px] w-full mx-auto min-h-[288px] flex flex-col">
+      <h2 id="no-item" class="text-[#ffebb3] text-3xl">No item...</h2>
+      <ul id="item_list" class=" grid grid-cols-4 gap-5"></ul>
+      <div class="flex gap-5 justify-center mt-auto pt-4">
+        <select id="filter_select"
+          class="bg-[#ffebb3] text-[#5a3e2b] outline-none border-none py-2 px-6 rounded-full uppercase font-bold">
+          <option class="text-[#5a3e2b] uppercase" value="order">Sort by input order</option>
+          <option class="text-[#5a3e2b] uppercase" value="description">Sort by description</option>
+          <option class="text-[#5a3e2b] uppercase" value="status">Sort by packet status</option>
+        </select>
+        <button id="delete-btn"
+          class="text-[#5a3e2b] py-2 px-6 bg-[#ffebb3] uppercase font-bold rounded-full">Clear</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#76c7ad] p-8 text-center">
+    <i class="text-black text-2xl font-semibold">You have <span id="count_items" class="bg-[#ffff00]">0</span> items on
+      your list, and you already packed <span id="count_checks">0</span> items.</i>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

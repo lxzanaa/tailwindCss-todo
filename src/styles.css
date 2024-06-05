@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'font__';
+  src: url('../fonts/5h1aiZUrOngCibe4TkHLQg.woff2') format('woff2'),
+    url('../fonts/5h1aiZUrOngCibe4TkHLQg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font__ {
+  font-family: 'font__', sans-serif;
+}
